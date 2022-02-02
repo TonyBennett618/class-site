@@ -11,3 +11,7 @@ p{
 ul li{
     color: white;
 }
+a{
+    text-decoration: none;
+    color: rgb(252, 152, 39);
+}
