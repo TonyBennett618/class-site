@@ -1,0 +1,264 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Homepage CSS.css">
+        <title>
+            Club Photos
+        </title>
+    </head>
+    <style>
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .darkMode{
+            background-color: rgb(31, 31, 31);
+            color:white;
+        }
+    </style>
+    <body>
+        <div class="header">
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Recipes.html">Recipes</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li class="active">Club Photos</li>
+                <li><a href="Announcements.html">Announcements</a></li>
+                <li><a href="Admin.html">Admin</a></li>
+            </ul>
+        </div>
+        <div class="imageGallery">
+            <div class="imagebox">
+                <img src="SkyNight.png">
+                <div id="button">
+                    <button>
+                        Purchase image
+                    </button>
+                </div>
+            </div>
+    
+            <div class="imagebox">
+                <img src="SkyNight.png">
+                <div id="button2">
+                    <button>
+                        Purchase image
+                    </button>
+                </div>
+            </div>
+    
+            <div class="imagebox">
+                <img src="SkyNight.png">
+                <div id="button3">
+                    <button>
+                        Purchase image
+                    </button>
+                </div>
+            </div>
+    
+            <div class="imagebox">
+                <img src="SkyNight.png">
+                <div id="button4">
+                    <button>
+                        Purchase image
+                    </button>
+                </div>
+            </div>
+    
+            <div class="imagebox">
+                <img src="SkyNight.png">
+                <div id="button5">
+                    <button>
+                        Purchase image
+                    </button>
+                </div>
+            </div>
+    
+            <div class="imagebox">
+                <img src="SkyNight.png">
+                <div id="button6">
+                    <button>
+                        Purchase image
+                    </button>
+                </div>
+            </div>
+    
+            <div class="imagebox">
+                <img src="SkyNight.png">
+                <div id="button7">
+                    <button>
+                        Purchase image
+                    </button>
+                </div>
+            </div>
+    
+            <div class="imagebox">
+                <img src="SkyNight.png">
+                <div id="button8">
+                    <button>
+                        Purchase image
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>
+                The Cooking Club
+
+                <button id="darkModeButton" onclick="darkMode()"> Dark Mode </button>
+
+                <a href="https://facebook.com/">
+                    <img id="Facebook" src="FB_Icon.png">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img id="Instagram" src="INST_Icon.png">
+                </a>
+                <a href="https://www.twitter.com/">
+                    <img id="Twitter" src="TWT_Icon.png">
+                </a>
+            </p>
+        </div>
+    </body>
+    <script>
+
+        /* i hate the way I had to do this.... let me know if there is a different way.*/
+        var btn = document.getElementById('button')
+
+        btn.onclick = function(){
+            
+            var alertMessage = "Purchase this image?"
+            var r=confirm(alertMessage);
+
+            if (r==true)
+            {
+                alert("Image purchased")
+            }
+            else
+            {
+                alert("Purchase canceled")
+            }
+        }
+        
+        var btn2 = document.getElementById('button2')
+
+        btn2.onclick = function(){
+            
+            var alertMessage = "Purchase this image?"
+            var r=confirm(alertMessage);
+
+            if (r==true)
+            {
+                alert("Image purchased")
+            }
+            else
+            {
+                alert("Purchase canceled")
+            }
+        }
+        
+        var btn3 = document.getElementById('button3')
+
+        btn3.onclick = function(){
+            
+            var alertMessage = "Purchase this image?"
+            var r=confirm(alertMessage);
+
+            if (r==true)
+            {
+                alert("Image purchased")
+            }
+            else
+            {
+                alert("Purchase canceled")
+            }
+        }
+
+        var btn4 = document.getElementById('button4')
+
+        btn4.onclick = function(){
+            
+            var alertMessage = "Purchase this image?"
+            var r=confirm(alertMessage);
+
+            if (r==true)
+            {
+                alert("Image purchased")
+            }
+            else
+            {
+                alert("Purchase canceled")
+            }
+        }
+        var btn5 = document.getElementById('button5')
+
+        btn5.onclick = function(){
+            
+            var alertMessage = "Purchase this image?"
+            var r=confirm(alertMessage);
+
+            if (r==true)
+            {
+                alert("Image purchased")
+            }
+            else
+            {
+                alert("Purchase canceled")
+            }
+        }
+        var btn6 = document.getElementById('button6')
+
+        btn6.onclick = function(){
+            
+            var alertMessage = "Purchase this image?"
+            var r=confirm(alertMessage);
+
+            if (r==true)
+            {
+                alert("Image purchased")
+            }
+            else
+            {
+                alert("Purchase canceled")
+            }
+        }
+        var btn7 = document.getElementById('button7')
+
+        btn7.onclick = function(){
+            
+            var alertMessage = "Purchase this image?"
+            var r=confirm(alertMessage);
+
+            if (r==true)
+            {
+                alert("Image purchased")
+            }
+            else
+            {
+                alert("Purchase canceled")
+            }
+        }
+        var btn8 = document.getElementById('button8')
+
+        btn8.onclick = function(){
+            
+            var alertMessage = "Purchase this image?"
+            var r=confirm(alertMessage);
+
+            if (r==true)
+            {
+                alert("Image purchased")
+            }
+            else
+            {
+                alert("Purchase canceled")
+            }
+        }
+    </script>
+    <script id="darkScript">
+            function darkMode()
+            {
+                var element = document.body;
+                element.classList.toggle("darkMode")
+            
+            } 
+    </script>
+</html>

@@ -1,0 +1,61 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 60px;
+    background:rgb(31, 31, 31);
+    position: fixed;
+    top: 0;
+    left: 0;
+    scroll-padding-top: 60px;
+}
+
+.header ul{
+    list-style: none;
+    width: 1000px;
+    color:white;
+    margin: 0 auto;
+}
+
+.header ul li{
+    padding: 0px;
+    width: 160px;
+    height: 60px;
+    float: left;
+    line-height: 60px;
+    text-align: center;
+    font-size: larger;
+}
+
+.header ul li.active{
+    background: #e9c46a;
+}
+
+/* i found a thing online for this part, I really wanted it to look cool and I hope that is ok*/
+.header ul li:hover{
+    background: #e9c46a;
+}
+
+.footer{
+    width: 100%;
+    height: 60px;
+    line-height: 40px;
+    background:rgb(31, 31, 31);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.footer p{
+    font-weight: 700;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    padding-left: 50px;
+}
+.footer img{
+    float:right;
+    padding-right: 50px;
+    
+}

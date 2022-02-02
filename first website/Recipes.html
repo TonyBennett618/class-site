@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Homepage CSS.css">
+        <title>
+            Cooking Recipes
+        </title>
+    </head>
+    <style>
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        h2{
+            color:white;
+            text-align: center;
+            font-size: 69px;
+            padding: 5px;
+            transform: translate(0%,20%);
+        }
+        .darkMode{
+            background-color: rgb(31, 31, 31);
+            color:white;
+        }
+    </style>
+    <body>
+            <div class="header">
+                <ul>
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li class="active">Recipes</li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                    <li><a href="ClubPhotos.html">Club Photos</a></li>
+                    <li><a href="Announcements.html">Announcements</a></li>
+                    <li><a href="Admin.html">Admin</a></li>
+                </ul>
+            </div>
+            <br>
+            <br>
+            <h1>
+                Try our recipes!
+            </h1>
+            <div class="recipeContainer" id="r1">
+                <img id="rcpImg" src="tuscanChicken.png">
+                <p id="rcpName">
+                    <a href="TuscanLemonChicken.html" src="/Recipe Sites">Tuscan Lemon Chicken</a>
+                    <br>
+                    Price Range: $20-$30
+                </p>
+            </div>
+            <div class="recipeContainer" id="r2">
+                <img src="vdkaPenne.png" id="rcpImg">
+                <p id="rcpName">
+                    <a href="PenneAllaVodka.html">Penne Alla Vodka</a> 
+                    <br>
+                    <br>
+                    Price Range: $20-$40
+                </p>
+            </div>
+            <div class="recipeContainer" id="r3">
+                <img src="eggTarts.png" id="rcpImg">
+                <p id="rcpName">
+                    <a href="EggTarts.html">Egg Tarts</a>
+                    <br>
+                    <br>
+                    Price Range: $10-$20
+                </p>
+            </div>
+            <div id="storeList">
+                <h2>Stores we recommend:</h2>
+                <div id="bug">                
+                    <p>
+                        Budget
+                    </p>
+                    <ul>
+                        <li>Kroger</li>
+                        <li>Walmart</li>
+                    </ul>
+                </div>
+                <div id="mid">                
+                    <p>
+                    Mid range
+                    </p>
+                    <ul>
+                        <li>Wegmans</li>
+                        <li>Aldi</li>
+                    </ul>
+                </div>
+                <div id="exp">
+                    <p>
+                        Expensive
+                    </p>
+                    <ul>
+                        <li>Whole Foods</li>
+                        <li>Local Farmers Market</li>
+                    </ul>
+                </div>
+            </div>
+        <div class="footer">
+            <p>
+                The Cooking Club
+
+                <button id="darkModeButton" onclick="darkMode()"> Dark Mode </button>
+
+                <a href="https://facebook.com/">
+                    <img id="Facebook" src="FB_Icon.png">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img id="Instagram" src="INST_Icon.png">
+                </a>
+                <a href="https://www.twitter.com/">
+                    <img id="Twitter" src="TWT_Icon.png">
+                </a>
+            </p>
+        </div>
+    </body>
+    <script id="darkScript">
+        function darkMode()
+        {
+            var element = document.body;
+            element.classList.toggle("darkMode")
+            element.classList.toggle("darkText")
+        } 
+     </script>
+</html>

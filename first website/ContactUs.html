@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Homepage CSS.css">
+        <title>
+            Contact us!
+        </title>
+    </head>
+    <style>
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        h1{
+            font-size: 69px;
+            text-align: center;
+            transform: translate(0,200%);
+        }
+
+        .darkMode{
+            background-color: rgb(31, 31, 31);
+            color:white;
+        }
+    </style>
+    <body>
+
+        <h1>
+            Contact Us!
+        </h1>
+        
+        <div class="cnctCard" id="card1">
+            <img src="userImage.png" id="userImage">
+            <h2 id="ofcrName">
+                <span>David Violante</span>
+                <br>
+            </h2>
+            <p>
+                <span class="italic">President</span>
+                <br>
+                <br>
+                d.vio@gmail.com
+            </p>
+        </div>
+
+        <div class="cnctCard" id="card2">
+            <img src="userImage.png" id="userImage">
+            <h2 id="ofcrName">
+                <span>Laura Eachann</span>
+                <br>
+            </h2>
+            <p>
+                <span class="italic">Vice President</span>
+                <br>
+                <br>
+                lauraEachann@gmail.com
+            </p>
+        </div>
+
+        <div class="cnctCard" id="card3">
+            <img src="userImage.png" id="userImage">
+            <h2 id="ofcrName">
+                <span>Tesfaye Burkhart</span>
+                <br>
+            </h2>
+            <p>
+                <span class="italic">Treasurer</span>
+                <br>
+                <br>
+                faye.Burk@gmail.com
+            </p>
+        </div>
+
+        <div class="cnctCard" id="card4">
+            <img src="userImage.png" id="userImage">
+            <h2 id="ofcrName">
+                <span>Gustavo Pantoja</span>
+                <br>
+            </h2>
+            <p>
+                <span class="italic">Media Officer</span>
+                <br>
+                <br>
+                g.Pantoja@gmail.com
+            </p>
+        </div>
+
+        <div class="header">
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Recipes.html">Recipes</a></li>
+                <li class="active">Contact Us</li>
+                <li><a href="ClubPhotos.html">Club Photos</a></li>
+                <li><a href="Announcements.html">Announcements</a></li>
+                <li><a href="Admin.html">Admin</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>
+                The Cooking Club
+
+                <button id="darkModeButton" onclick="darkMode()"> Dark Mode </button>
+
+                <a href="https://facebook.com/">
+                    <img id="Facebook" src="FB_Icon.png">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img id="Instagram" src="INST_Icon.png">
+                </a>
+                <a href="https://www.twitter.com/">
+                    <img id="Twitter" src="TWT_Icon.png">
+                </a>
+            </p>
+        </div>
+    </body>
+    <script id="darkScript">
+        function darkMode()
+        {
+            var element = document.body;
+            element.classList.toggle("darkMode")
+        } 
+     </script>
+</html>

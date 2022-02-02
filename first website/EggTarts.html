@@ -1,0 +1,107 @@
+<html>
+    <link rel="stylesheet" href="Homepage CSS.css">
+    <head>
+        <title>Egg Tarts</title>
+    </head>
+    <style>
+          a{
+            text-decoration: none;
+            color: white;
+        }
+        .darkMode{
+            background-color: rgb(31, 31, 31);
+            color:white;
+        }
+    </style>
+    <body>
+        <div class="header">
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li class="active"><a href="Recipes.html">Recipes</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li><a href="ClubPhotos.html">Club Photos</a></li>
+                <li><a href="Announcements.html">Announcements</a></li>
+                <li><a href="Admin.html">Admin</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>
+                The Cooking Club
+
+                <button id="darkModeButton" onclick="darkMode()"> Dark Mode </button>
+
+                <a href="https://facebook.com/">
+                    <img id="Facebook" src="FB_Icon.png">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img id="Instagram" src="INST_Icon.png">
+                </a>
+                <a href="https://www.twitter.com/">
+                    <img id="Twitter" src="TWT_Icon.png">
+                </a>
+            </p>
+        </div>
+        <div class="rcpPgFrmt">
+            <h1 class="rcpTitle">
+                Egg Tarts
+            </h1>
+            <img src="eggTarts.png" class="foodImage">
+            <p class="ingredients" style="font-size: 24px;">
+                
+                <span style="font-weight: bold;">Custard Filling</span>
+                <br>
+                4 eggs, beaten, reserve 2 tablespoons for your pastry dough
+                <br>
+                ¾ cup water, hot
+                <br>
+                6 tablespoons sugar
+                <br>
+                ⅛ teaspoon salt, pinch
+                <br>
+                ¼ cup evaporated milk
+                <br>
+                vanilla extract, a dash, optional
+                <br>
+                <br>
+                <span style="font-weight: bold;">Pastry Dough</span>
+                2 cups cake flour, plus extra for dusting
+                <br>
+                115 g unsalted butter, room temperature
+                <br>
+                ¼ cup powdered sugar
+                <br>
+                2 tablespoons egg, beaten
+                <br>
+                ⅛ teaspoon salt
+                <br>
+                vanilla extract, a dash, optional
+            </p>
+            <p class="instructions">
+                For the pastry, in a large bowl, sift flour, sugar, and salt. Then add softened butter. Bring the mixture together with your hands, careful not to knead the pastry dough too much or you will make the pastry tough.
+                <br>
+                Whisk the egg yolks and add the 2 tablespoons of beaten yolk to the flour mixture. Bring together until smooth. If the dough is too sticky, coating your hands with flour will help. Cover with plastic wrap and then refrigerate for 30 minutes, or until the dough is firm.
+                <br>
+                To make the custard filling, melt sugar and salt with hot water. Mix until dissolved then let cool.
+                <br>
+                Add the rest of the beaten egg yolk. Stir in sugar water and also evaporated milk (if adding vanilla, add now). Stir and combine everything well.
+                Strain the filling to ensure no lumps. Chill in the refrigerator.
+                <br>
+                Preheat the oven to 400˚F (200˚C.)
+                <br>
+                Take the dough out and divide into 16 equal portions. Spray the tart pan with a light coating of oil. Take one portion of your dough and roll it into a ball and place in your tart shell. Press the shell into the pan with your fingers. Try to make the wrapper uniform in thickness and avoid a thick bottom. Repeat to finish all.
+                Pour the custard filling into the shells until it is about 80% full. Bake for 15 to 20 minutes until the surface becomes golden brown and a toothpick can stand in the egg tart.
+                Cool down for several minutes and then take the egg tarts out of the pan. Serve while still warm.
+                <span style="font-weight: lighter; font-style: italic;">(recipe credit to Tasty.Co)</span>
+            </p>
+            
+        </div>
+    
+    </body>
+    <script id="darkScript">
+        function darkMode()
+        {
+            var element = document.body;
+            element.classList.toggle("darkMode")
+        } 
+     </script>
+</html>

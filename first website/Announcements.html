@@ -1,0 +1,236 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Homepage CSS.css">
+        <title>
+            Announcements
+        </title>
+    </head>
+    <style>
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        h1{
+            text-align: center;
+            font-size: 100px;
+            margin-top: 100px;
+        }
+        textarea{
+            height: 200px;
+            width: 500px;
+        }
+        .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        }
+
+
+        h2{
+            color:#264653;
+        }
+        p{
+            color:#264653;
+        }
+        /* i had to do some reading, ultimately ended up modifying w3school's version of their input boxes since I don't know how to do it.
+        although its really interesting to read and learn how these work. my real challenge is appending the announcement as a seperate container*/
+                * {
+        box-sizing: border-box;
+        }
+
+        input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+        }
+
+        label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+        color:#264653;
+        }
+
+        input[type=submit] {
+        background-color: #2A9D8F;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+        }
+
+        .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        }
+
+        .textColumn {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+        }
+
+        .inputColumn {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        #smplAncmt{
+            background-color: whitesmoke; 
+            border: solid #E76F51; 
+            border-radius: 30px;
+            padding: 10px;
+            margin:30px;
+        }
+
+        .anounBox{
+            background-color: whitesmoke; 
+            border: solid #E76F51; 
+            border-radius: 30px;
+            padding: 10px;
+            margin:30px;
+            
+        }
+        .anounBox .anounTxt {
+            background-color: white;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .darkMode{
+            background-color: rgb(31, 31, 31);
+            color:white;
+        }
+    </style>
+    <body>
+        <h1>
+            Announcements
+        </h1>
+
+        <div id="Anouns">
+            <div class="anounBox"> 
+                <h2 class="anounName">
+                    Notice:
+                </h2>
+                <p id="box1" class="anounTxt">
+                    This page is currently under maintainence! We appreciate your patience.
+                </p>
+            </div>
+        </div>
+
+        <div id="smplAncmt">
+            <h2>
+                David Violante
+            </h2>
+            <p class="anounTxt">
+                Good evening everyone! We hope you are doing well.
+                <br>
+                This week we will be going over how to pair ingredients to other ingredients in order
+                to make a meal! We will also be pairing drinks with each meal.
+                <br>
+                In addition, the deadline to get your club dues in is in 4 days! The due amount is $20.
+                <br>
+                Like always, club practice times will be at 5:30 pm to 8:00 pm at the Culinary Centre. 
+                <span style="font-weight: bold;">Please contact an officer if you will be attending!</span>
+                <br>
+                Thank you and we look forward to seeing you there!
+                <br>
+                <br>
+                Cheers!
+                <br>
+                - David Violante, Club President.
+            </p>
+        </div>
+        
+        <div class="container" style="margin-bottom: 30px;">
+            <form>
+            <div class="row">
+              <div class="textColumn">
+                <label for="fname">First Name</label>
+              </div>
+              <div class="inputColumn">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="textColumn">
+                <label for="lname">Last Name</label>
+              </div>
+              <div class="inputColumn">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="textColumn">
+                <label for="subject">Subject</label>
+              </div>
+              <div class="inputColumn">
+                <textarea id="subject" name="subject" placeholder="Type your announcement here.." style="height:200px"></textarea>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <input id="submit" type="submit" onclick="displayData()">
+            </div>
+            </form>
+        </div>
+          
+
+        <div class="header">
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Recipes.html">Recipes</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li><a href="ClubPhotos.html">Club Photos</a></li>
+                <li class="active">Announcements</li>
+                <li><a href="Admin.html">Admin</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>
+                The Cooking Club
+
+                <button id="darkModeButton" onclick="darkMode()"> Dark Mode </button>
+
+                <a href="https://facebook.com/">
+                    <img id="Facebook" src="FB_Icon.png">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img id="Instagram" src="INST_Icon.png">
+                </a>
+                <a href="https://www.twitter.com/">
+                    <img id="Twitter" src="TWT_Icon.png">
+                </a>
+            </p>
+        </div>
+    </body>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js">
+        /*function displayData()
+        {   
+            var x = document.getElementById("fname").value;
+            alert(x)
+            
+        }
+        */
+    </script>
+    <script id="darkScript">
+       function darkMode()
+       {
+           var element = document.body;
+           element.classList.toggle("darkMode")
+       } 
+    </script>
+</html>

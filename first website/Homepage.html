@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Homepage CSS.css">
+        <title>
+            Cooking Club
+        </title>
+    </head>
+    <style>
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .darkMode{
+            background-color: rgb(31, 31, 31);
+            color: white;
+        }
+    </style>
+    <body>
+        <div class="header">
+            <ul>
+                <li class="active">Home</li>
+                <li><a href="Recipes.html">Recipes</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li><a href="ClubPhotos.html">Club Photos</a></li>
+                <li><a href="Announcements.html">Announcements</a></li>
+                <li><a href="Admin.html">Admin</a></li>
+            </ul>
+        </div>
+        <img id="ImageHeader" src="ImageHeader.png">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="bio">
+        <p>
+            “Since 1992, the Cooking Club has sought to provide a community for those who view food as an art. All are welcome, regardless of skill or cuisine.
+            In recent years, the club has grown to over a hundred newsletter subscribers and more than 50 regulars at our weekly events.
+            This website contains some of the Cooking Club’s essential content, including contact information and even some of our original recipes. Enjoy!”
+        </p>
+        </div>
+        <div class="footer">
+            <p>
+                The Cooking Club
+
+                <button id="darkModeButton" onclick="darkMode()"> Dark Mode </button>
+
+                <a href="https://facebook.com/">
+                    <img id="Facebook" src="FB_Icon.png">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img id="Instagram" src="INST_Icon.png">
+                </a>
+                <a href="https://www.twitter.com/">
+                    <img id="Twitter" src="TWT_Icon.png">
+                </a>
+            </p>
+        </div>
+    </body>
+    <script id="darkScript">
+       function darkMode()
+       {
+           var element = document.body;
+           element.classList.toggle("darkMode")
+       } 
+    </script>
+</html>
