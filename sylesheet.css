@@ -110,24 +110,25 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 h1{
+    font-family: "venus rising";
+    src: url('file:/venus rising rg.ttf') format('truetype');
     color: white;
     text-align: center;
     font-size: 69px;
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
 }
 h2{
+    font-family: "venus rising";
+    src: url('file:/venus rising rg.ttf') format('truetype');
     color: white;
     text-align: center;
-    padding: 10px;
-    font-size: 45px;
+    font-size: 45px;padding-bottom: 10px;
 }
 p{
+    font-family: "spaceship2100";
+    src: url('file:/spaceship2100.ttf') format('truetype');
     color: white;
-}
-ul li{
-    color: white;
-}
-a{
-    text-decoration: none;
-    color: rgb(252, 152, 39);
+    font-size: 23px;
 }
