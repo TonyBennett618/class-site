@@ -140,15 +140,20 @@ p{
   width:100vw;
   height: 30vh;
   background-color: rgba(255, 255, 255, 0.123);
-  align-content: space-around;
   display: flex;
-  align-content: center;
+  align-content: space-around;
+  position: absolute;
 }
 .item{
   align-items: center;
-  width: 25vh;
-  height: 25vh;
-  background-color: rebeccapurple;
+  width: 23vh;
+  height: 23vh;
+  background-color: rgba(175, 232, 255, 0.493);
   display: flex;
   margin: 30px;
+  align-content: space-around;
+  position: center;
+}
+.item p{
+  text-align: center;
 }
