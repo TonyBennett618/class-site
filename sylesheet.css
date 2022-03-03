@@ -66,7 +66,7 @@
 }
 
 /*end of stars*/
-
+/*
 #hexagon {
     width: 200px;
     height: 115.47px;
@@ -76,6 +76,7 @@
     margin-left: 137px;
     margin-right: 137px;
     margin-top: 50px;
+    display: flex;
   }
   #hexagon::before {
     content: "";
@@ -87,6 +88,7 @@
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
     border-bottom: 57.735px solid rgb(252, 152, 39);
+    display: flex;
   }
   #hexagon::after {
     content: "";
@@ -98,13 +100,14 @@
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
     border-top: 57.735px solid rgb(252, 152, 39);
+    display: flex;
   }
-  #hexagon p{
-      text-align: center;
-      position: relative;
+  .text{
+    position: absolute;
+    text-align: center;
   }
 
-
+*/
 body{
     background-image: url(spaceImage.jpg);
     font-family: Arial, Helvetica, sans-serif;
@@ -131,4 +134,21 @@ p{
     src: url('file:/spaceship2100.ttf') format('truetype');
     color: white;
     font-size: 23px;
+}
+
+.container{
+  width:100vw;
+  height: 30vh;
+  background-color: rgba(255, 255, 255, 0.123);
+  align-content: space-around;
+  display: flex;
+  align-content: center;
+}
+.item{
+  align-items: center;
+  width: 25vh;
+  height: 25vh;
+  background-color: rebeccapurple;
+  display: flex;
+  margin: 30px;
 }
