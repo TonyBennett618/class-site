@@ -157,3 +157,6 @@ p{
 .item p{
   text-align: center;
 }
+.item a{
+  position: absolute;
+}
