@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+}
+
+
+.cabinet{
+    display: flex;
+    height: 100%;
+}
+
+.cabinetSide{
+    display: block;
+    position: relative;
+    background-color: burlywood;
+    width: 50%;
+    height: 100%;
+}
+
+.drawer{
+    width: 50%;
+    height: 95.9%;
+    background-color: peru;
+    border-top: 20px solid rgb(224, 174, 109);
+    border-bottom: 20px solid rgb(224, 174, 109);
+    border-right: 40px rgb(224, 174, 109) solid;
+
+}
+.drawer p{
+    font-size: 27px;
+    text-align: center;
+}
+
+@media screen and (max-width:960px) {
+    .drawer{
+        background-color: burlywood;
+        border: 0;
+        height: 100%;
+    }
+    .drawer p{
+        opacity: 0;
+    }
+}

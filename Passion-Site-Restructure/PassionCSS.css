@@ -1,0 +1,55 @@
+body{
+  background-image: url("passionsite_BG.png");
+}
+
+h1{
+  font-family: "astro";
+  src: url('file:/astro.ttf') format('truetype');
+  font-size: 75px;
+  padding:30px;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #fff;
+  text-shadow:       0 0 7px rgb(119, 228, 255),
+  0 0 10px rgb(82, 82, 82),
+  0 0 21px rgb(82, 82, 82);
+}
+.infoBox{
+  width: 690px;
+  font-size: 35px;
+  font-weight: 100;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-right: 50px;
+}
+
+.listOne{
+  padding-left: 100px;
+}
+
+.linkBox{
+  width: 420px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  font-size: 25px;
+  
+}
+ul{
+  list-style-image: url("listIcon.png") ;
+}
+.neonText {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(217, 0, 107),
+      0 0 82px rgb(217, 0, 107),
+      0 0 92px rgb(217, 0, 107),
+      0 0 102px rgb(217, 0, 107),
+      0 0 151px rgb(217, 0, 107);
+  }
