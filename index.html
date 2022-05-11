@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>
-            Class Site
+            Tony's Realm
         </title>
         <link rel="stylesheet" href="styleTemp.css">
     </head>
@@ -29,7 +29,36 @@
             <li class="item"> <a href="https://tonybennett618.github.io/Folder-Village/">Folder Village</a></li>
             <li class="item">Responses</li>
         </ul>
+        <div class="name">
+            website by Tony Bennett
+        </div>
     </div>
 
     </body>
+
+    <script src="anime.min.js"></script>
+    <script>
+        anime({
+            targets: ".title",
+            opacity: 1,
+            translateY: -150,
+            duration: 5000,
+            delay: 1500
+        });
+
+        anime({
+            targets: ".item",
+            opacity: 1,
+            translateY: -150,
+            delay: anime.stagger(100, {start: 3000}),
+            duration: 5000
+        });
+
+        anime({
+            targets: ".name",
+            opacity: 1,
+            delay: 5500,
+            duration: 5000
+        });
+    </script>
 </html>
